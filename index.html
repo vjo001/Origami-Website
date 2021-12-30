@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Origami Designs</title>
+    <style>
+        h1{
+            color:rgb(174, 0, 255);
+            border: 10px solid rgb(174, 0, 255);
+            background-color: rgb(0, 0, 0);
+        }
+        body{
+            background-color: rgb(174, 0, 255);
+        }
+        img{
+            border: 5px solid rgb(174, 0, 255);
+            border-radius: 40px;
+        }
+        p{
+            font-family: comic sans ms;
+            font-weight: italic;
+        }
+        ol,ul{
+            font-family: comic sans ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>Origami Designs</h1>
+    <a href ="about.html"> About Us</a>
+    <a href="followus.html">Follow Us</a>
+    <hr>
+   <p><h2><i><b><center>Press on the origami picture to see how the animal is made!</center></b></i></h3></p>
+    <hr>
+
+    <a href ="http://origami.me/camel/"><img src = "camel.png" width="200px" height="200px"></a>
+    <p><i>Interesting facts about camels</i></p>
+    <ol>
+        <li>Camels' ears are furry.</li>
+        <li>Camels can move easily across the sand because of their specially designed feet.</li>
+        <li>When camels find water, they will drink as much as possible.</li>
+    </ol>
+    
+    <hr width =500px >
+    <a href="http://origami.me/chameleon/">
+    <img src="chameleon.png" width="200px" height="200px"></a>
+    <p><i>Interesting facts about chameleons</i></p>
+    <ul>
+        <li>Chameleons are reptiles that are part of the iguana suborder.</li>
+        <li>Changing skin color is an important part of communication among chameleons.</li>
+        <li>Most chameleons have a prehensile tail that they use to wrap around tree branchas.</li>
+    </ul>
+
+    <hr width=500px>
+    <a href="http://origami.me/pigeon/">
+    <img src="pigeon.png" width="200px" height="200px"></a>
+    <p><i>Interesting facts about pigeons</i></p>
+    <ol>
+        <li>Pigeons are incredibly complex and intelligent animals.</li>
+        <li>Pigeons are reowned for their outstanding navigational abilities.</li>
+        <li>Pigeons have exellent hearing abilities.</li>
+    </ol>
+
+    <hr width=500px>
+    <a href="http://origami.me/teddy-bear/">
+    <img src="teddy.png" width="200px" height="200px"></a>
+    <p><i>Interesting facts about teddy bears</i></p>
+    <ul>
+        <li>The Teddy Bears' Picnic song was originally called The Teddy Bear Two Step.</li>
+        <li>Winnie the Pooh was based on a real bear.</li>
+        <li>The smallest commercially available stitched teddy bear is a mere 0.29 inches tall, made by South African "microbear"
+        maker Cheryl Moss, whose largest creations are just taller than half an inch.</li>
+    </ul>
+
+    <hr width=500px>
+    <a href="http://origami.me/panda/">
+    <img src="panda.png" width="200px" height="200px"></a>
+    <p><i>Interesting facts about pandas</i></p>
+    <ol>
+        <li>Giant pandas are good at climbing trees and can also swim.</li>
+        <li>Pandas go from pink to white and black (or brown).</li>
+        <li>Pandas are "lazy" - eating and sleeping make their day.</li>
+    </ol>
+
+    <hr width=500px>
+    <a href="http://origami.me/flying-cicada/">
+    <img src="cicada.png" width="200px" height="200px"></a>
+    <p><i>Interesting facts about cicadas</i></p>
+    <ul>
+        <li>All cicada species in North America came from a common ancestor.</li>
+        <li>Cicada species switch from being on a 13-year cycle to a 17-year cycle.</li>
+    </ul>
+
+    <hr width=500px>
+<!-- Code injected by life server -->
+<script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                }
+            }
+            var protocol = window.location.protocal === 'http:' ? 'ws://' : ' wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    }
+    else {
+        console.erroe('Upgrade your browser.  This browser is NOT supported WebSocket for Live-Reloading');
+    }
+    // ]]>
+</script></body>
+</html>
